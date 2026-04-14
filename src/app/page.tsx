@@ -61,10 +61,16 @@ export default function Home() {
     },
   ];
   const stats = [
-    { label: "Global Reach", value: "100+" },
-    { label: "Convenience", value: "Targeted Delivery" },
-    { label: "Big Experience", value: "Expert Team" },
-    { label: "Team Strength", value: "Client Satisfaction" },
+    { label: "Base", value: "UK-Based" },
+    { label: "Model", value: "Wholesale & Export" },
+    { label: "Promise", value: "Quality Assured" },
+    { label: "Focus", value: "Ethical Practice" },
+  ];
+
+  const corePrinciples = [
+    "Quality without compromise",
+    "Transparency in every transaction",
+    "Long-term partnership with our clients",
   ];
 
   return (
@@ -77,35 +83,63 @@ export default function Home() {
               alt="Madarpharma logo"
               className="h-12 w-12 rounded-xl object-cover ring-2 ring-secondary/40"
             />
-            <div>
-              <p className="text-xl font-extrabold tracking-tight text-primary">
-                madarpharma
-              </p>
-              <p className="text-xs text-slate-500">Your Partner in Better Health</p>
-            </div>
+            <img
+              src="/slogan-cropped.png"
+              alt="Madarpharma slogan"
+              className="h-7 w-auto shrink-0 object-contain md:h-8"
+            />
           </div>
 
-          <nav className="flex flex-wrap items-center gap-2 text-sm font-semibold text-slate-600">
-            <a className="rounded-full px-3 py-1.5 transition hover:bg-slate-100 hover:text-primary" href="#home">
-              Home
-            </a>
-            <a className="rounded-full px-3 py-1.5 transition hover:bg-slate-100 hover:text-primary" href="#offerings">
-              Offerings
-            </a>
-            <a className="rounded-full px-3 py-1.5 transition hover:bg-slate-100 hover:text-primary" href="#about">
-              About
-            </a>
-            <a className="rounded-full px-3 py-1.5 transition hover:bg-slate-100 hover:text-primary" href="#services">
-              Services
-            </a>
-            <a className="rounded-full px-3 py-1.5 transition hover:bg-slate-100 hover:text-primary" href="#contact">
-              Contact
-            </a>
-          </nav>
+          <div className="hidden items-center gap-3 md:flex">
+            <nav className="flex flex-wrap items-center gap-2 text-sm font-semibold text-slate-600">
+              <a className="rounded-full px-3 py-1.5 transition hover:bg-slate-100 hover:text-primary" href="#home">
+                Home
+              </a>
+              <a className="rounded-full px-3 py-1.5 transition hover:bg-slate-100 hover:text-primary" href="#offerings">
+                Offerings
+              </a>
+              <a className="rounded-full px-3 py-1.5 transition hover:bg-slate-100 hover:text-primary" href="#about">
+                About
+              </a>
+              <a className="rounded-full px-3 py-1.5 transition hover:bg-slate-100 hover:text-primary" href="#services">
+                Services
+              </a>
+              <a className="rounded-full px-3 py-1.5 transition hover:bg-slate-100 hover:text-primary" href="#contact">
+                Contact
+              </a>
+            </nav>
+            <button className="rounded-full bg-primary px-5 py-2 text-sm font-semibold text-white transition hover:bg-primary/90">
+              Contact Us
+            </button>
+          </div>
 
-          <button className="rounded-full bg-primary px-5 py-2 text-sm font-semibold text-white transition hover:bg-primary/90">
-            Contact Us
-          </button>
+          <details className="group w-full md:hidden">
+            <summary className="ml-auto flex w-fit cursor-pointer list-none items-center rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 [&::-webkit-details-marker]:hidden">
+              Menu
+            </summary>
+            <div className="mt-3 rounded-2xl border border-slate-200 bg-white p-3 shadow-sm">
+              <nav className="flex flex-col gap-1 text-sm font-semibold text-slate-700">
+                <a className="rounded-xl px-3 py-2 transition hover:bg-slate-100 hover:text-primary" href="#home">
+                  Home
+                </a>
+                <a className="rounded-xl px-3 py-2 transition hover:bg-slate-100 hover:text-primary" href="#offerings">
+                  Offerings
+                </a>
+                <a className="rounded-xl px-3 py-2 transition hover:bg-slate-100 hover:text-primary" href="#about">
+                  About
+                </a>
+                <a className="rounded-xl px-3 py-2 transition hover:bg-slate-100 hover:text-primary" href="#services">
+                  Services
+                </a>
+                <a className="rounded-xl px-3 py-2 transition hover:bg-slate-100 hover:text-primary" href="#contact">
+                  Contact
+                </a>
+              </nav>
+              <button className="mt-3 w-full rounded-full bg-primary px-5 py-2 text-sm font-semibold text-white transition hover:bg-primary/90">
+                Contact Us
+              </button>
+            </div>
+          </details>
         </div>
       </header>
 
@@ -122,11 +156,11 @@ export default function Home() {
               UK-Focused Pharmaceutical
               <span className="block text-slate-800">Supply for Global Markets.</span>
             </h1>
-            <p className="mt-5 max-w-xl text-base text-slate-600 md:text-lg">
-              madarpharma supports registered importers and healthcare partners
-              with reliable sourcing, compliance-led operations, and dependable
-              export logistics.
-            </p>
+             <p className="mt-5 max-w-xl text-base text-slate-600 md:text-lg">
+              Madar Pharma is a UK-based pharmaceutical wholesaler supplying
+              high-quality medicines from the United Kingdom to international
+              markets through compliant, secure, and reliable distribution.
+             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <button className="inline-flex w-[190px] items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-bold text-white transition hover:bg-primary/90">
                 Request a Quote
@@ -163,10 +197,10 @@ export default function Home() {
 
         <section id="about" className="mx-auto w-full max-w-6xl scroll-mt-24 px-6 pb-20 md:px-10">
           <div className="rounded-3xl border border-primary/10 bg-primary px-6 py-10 text-white md:px-10">
-            <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4">
               {stats.map((item) => (
                 <div key={item.label}>
-                  <p className="text-3xl font-black">{item.value}</p>
+                  <p className="break-words text-2xl font-black leading-tight md:text-3xl">{item.value}</p>
                   <p className="mt-1 text-sm text-white/80">{item.label}</p>
                 </div>
               ))}
@@ -181,25 +215,41 @@ export default function Home() {
                 About madarpharma
               </p>
               <h2 className="mt-3 text-3xl font-black text-primary md:text-4xl">
-                UK's trusted pharmaceutical supply partner.
+                A trusted link between UK supply and global healthcare demand.
               </h2>
               <p className="mt-4 text-slate-600">
-                With rising demand across Middle East and African regions, we
-                provide bonafide importers with consistent pharmaceutical supply,
-                transparent communication, and scalable B2B fulfillment.
+                Madar Pharma is a UK-based pharmaceutical wholesaler dedicated
+                to supplying high-quality medicines from the United Kingdom to
+                international markets. Operating with a strong commitment to
+                regulatory compliance, quality assurance, and ethical practice,
+                we support healthcare providers, distributors, and organizations
+                worldwide.
+              </p>
+              <p className="mt-4 text-slate-600">
+                Specializing in wholesale and export, we source products from
+                reputable, fully licensed suppliers and ensure all medicines
+                meet strict UK and international standards. As a company
+                registered in the UK for wholesale pharmaceutical distribution,
+                we are committed to delivering safe, effective, and reliable
+                healthcare solutions across borders.
+              </p>
+              <p className="mt-4 text-slate-600">
+                By leveraging robust supply chains and trusted logistics
+                partners, we deliver medicines with consistency, security, and
+                transparency in every transaction.
               </p>
             </div>
             <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
               <h3 className="text-lg font-bold text-primary">
-                Core Categories
+                Our Core Principles
               </h3>
-              <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
-                {offerings.map((item) => (
+              <div className="mt-4 grid grid-cols-1 gap-3">
+                {corePrinciples.map((item) => (
                   <div
-                    key={item.title}
+                    key={item}
                     className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-700"
                   >
-                    {item.title}
+                    {item}
                   </div>
                 ))}
               </div>
@@ -383,20 +433,20 @@ export default function Home() {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3">
               <img
-                src="/logo.jpg"
+                src="/dark-logo.jpg"
                 alt="Madarpharma logo"
                 className="h-11 w-11 rounded-xl object-cover ring-2 ring-secondary/40"
               />
-              <div>
-                <p className="text-xl font-extrabold tracking-tight text-white">
-                  madarpharma
-                </p>
-                <p className="text-xs text-slate-400">Your Partner in Better Health</p>
-              </div>
+              <img
+                src="/dark-slogan-cropped.png"
+                alt="Madarpharma slogan"
+                className="h-7 w-auto shrink-0 object-contain md:h-8"
+              />
             </div>
             <p className="mt-4 max-w-md text-sm leading-6 text-slate-400">
-              Trusted pharmaceutical wholesaler and export partner delivering
-              quality healthcare products with compliance-first operations.
+              UK-based pharmaceutical wholesaler delivering high-quality
+              medicines to international markets with regulatory compliance,
+              transparency, and dependable export operations.
             </p>
           </div>
 

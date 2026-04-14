@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "madarpharma | Modern Pharmacy Care",
+  title: "Madar Pharma | UK Pharmaceutical Wholesaler",
   description:
-    "Madarpharma is a modern pharmacy landing page focused on trusted care, quick service, and wellness support.",
+    "Madar Pharma is a UK-based pharmaceutical wholesaler supplying high-quality medicines to international markets with compliance-led, ethical, and reliable export operations.",
 };
 
 export default function RootLayout({
