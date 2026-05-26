@@ -95,9 +95,6 @@ export default function Home() {
               <a className="rounded-full px-3 py-1.5 transition hover:bg-slate-100 hover:text-primary" href="#home">
                 Home
               </a>
-              <a className="rounded-full px-3 py-1.5 transition hover:bg-slate-100 hover:text-primary" href="#offerings">
-                Offerings
-              </a>
               <a className="rounded-full px-3 py-1.5 transition hover:bg-slate-100 hover:text-primary" href="#about">
                 About
               </a>
@@ -105,7 +102,7 @@ export default function Home() {
                 Services
               </a>
               <a className="rounded-full px-3 py-1.5 transition hover:bg-slate-100 hover:text-primary" href="#contact">
-                Contact
+                Contact Us
               </a>
             </nav>
             <button className="rounded-full bg-primary px-5 py-2 text-sm font-semibold text-white transition hover:bg-primary/90">
@@ -122,9 +119,6 @@ export default function Home() {
                 <a className="rounded-xl px-3 py-2 transition hover:bg-slate-100 hover:text-primary" href="#home">
                   Home
                 </a>
-                <a className="rounded-xl px-3 py-2 transition hover:bg-slate-100 hover:text-primary" href="#offerings">
-                  Offerings
-                </a>
                 <a className="rounded-xl px-3 py-2 transition hover:bg-slate-100 hover:text-primary" href="#about">
                   About
                 </a>
@@ -132,7 +126,7 @@ export default function Home() {
                   Services
                 </a>
                 <a className="rounded-xl px-3 py-2 transition hover:bg-slate-100 hover:text-primary" href="#contact">
-                  Contact
+                  Contact Us
                 </a>
               </nav>
               <button className="mt-3 w-full rounded-full bg-primary px-5 py-2 text-sm font-semibold text-white transition hover:bg-primary/90">
@@ -153,22 +147,15 @@ export default function Home() {
               Pharmaceutical Wholesaler • Distributor • Exporter
             </span>
             <h1 className="mt-6 text-4xl font-black leading-tight text-primary md:text-5xl">
-              UK-Focused Pharmaceutical
+              UK-Quality Pharmaceutical
               <span className="block text-slate-800">Supply for Global Markets.</span>
             </h1>
              <p className="mt-5 max-w-xl text-base text-slate-600 md:text-lg">
               Madar Pharma is a UK-based pharmaceutical wholesaler supplying
               high-quality medicines from the United Kingdom to international
-              markets through compliant, secure, and reliable distribution.
+              and domestic markets through compliant, secure, and reliable
+              distribution.
              </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <button className="inline-flex w-[190px] items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-bold text-white transition hover:bg-primary/90">
-                Request a Quote
-              </button>
-              <button className="inline-flex w-[190px] items-center justify-center rounded-full border border-primary/20 bg-white px-6 py-3 text-sm font-bold text-primary transition hover:bg-slate-50">
-                Become a Partner
-              </button>
-            </div>
           </div>
 
           <div className="relative">
@@ -178,90 +165,164 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="offerings" className="mx-auto w-full max-w-6xl scroll-mt-24 px-6 pb-20 md:px-10">
-          <h2 className="text-3xl font-black text-primary md:text-4xl">
-            What We Offer
-          </h2>
-          <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <section className="mx-auto w-full max-w-6xl px-6 pb-16 md:px-10">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+
+            {/* MHRA Card */}
+            <div className="relative overflow-hidden rounded-2xl bg-primary px-6 py-5 text-white shadow-md">
+              <svg className="absolute -right-4 -top-4 h-28 w-28 text-white/5" viewBox="0 0 64 64" fill="currentColor">
+                <path d="M32 2L4 14v20C4 50 17 61 32 64 47 61 60 50 60 34V14L32 2z"/>
+              </svg>
+              <div className="relative flex items-center gap-5">
+                <svg className="h-14 w-14 shrink-0" viewBox="0 0 64 64" fill="none">
+                  <path d="M32 4L6 15v17c0 14.4 11 26.4 26 29 15-2.6 26-14.6 26-29V15L32 4z" fill="white" fillOpacity="0.12" stroke="white" strokeWidth="1.5"/>
+                  <path d="M32 11L12 20v12c0 10.5 8 19.2 20 21.2C44 51.2 52 42.5 52 32V20L32 11z" fill="white" fillOpacity="0.1" stroke="white" strokeWidth="1"/>
+                  <path d="M24 22l4 4 4-6 4 6 4-4v6H24v-6z" fill="white" fillOpacity="0.9"/>
+                  <rect x="22" y="30" width="20" height="2" rx="1" fill="white" fillOpacity="0.7"/>
+                  <path d="M25 38l4 4 10-9" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                <div className="min-w-0">
+                  <p className="text-xs font-bold uppercase tracking-widest text-secondary">UK Regulatory</p>
+                  <h3 className="mt-0.5 text-lg font-black">MHRA Approved</h3>
+                  <p className="mt-1 text-xs leading-5 text-white/60">Medicines &amp; Healthcare products Regulatory Agency</p>
+                </div>
+              </div>
+            </div>
+
+            {/* GDP Card */}
+            <div className="relative overflow-hidden rounded-2xl bg-white px-6 py-5 shadow-md ring-1 ring-primary/10">
+              <svg className="absolute -right-5 -top-5 h-28 w-28 text-secondary/20" viewBox="0 0 64 64" fill="currentColor">
+                <circle cx="32" cy="32" r="30"/>
+              </svg>
+              <div className="relative flex items-center gap-5">
+                <svg className="h-14 w-14 shrink-0" viewBox="0 0 64 64" fill="none">
+                  <circle cx="32" cy="32" r="28" stroke="#0d5c73" strokeWidth="2" fill="#0d5c73" fillOpacity="0.06"/>
+                  <circle cx="32" cy="32" r="22" stroke="#0d5c73" strokeWidth="1" fill="none" strokeDasharray="3 2"/>
+                  <circle cx="32" cy="32" r="15" fill="#0d5c73" fillOpacity="0.08" stroke="#0d5c73" strokeWidth="1.5"/>
+                  <path d="M21 32l7 7 15-14" stroke="#0d5c73" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                <div className="min-w-0">
+                  <p className="text-xs font-bold uppercase tracking-widest text-primary">EU &amp; UK Standards</p>
+                  <h3 className="mt-0.5 text-lg font-black text-primary">GDP Compliant</h3>
+                  <p className="mt-1 text-xs leading-5 text-slate-500">Good Distribution Practice — certified supply chain</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        {/* What We Offer */}
+        <section className="mx-auto w-full max-w-6xl scroll-mt-24 px-6 pb-20 md:px-10">
+          <p className="text-sm font-semibold uppercase tracking-wider text-primary">Our Products</p>
+          <h2 className="mt-2 text-3xl font-black text-primary md:text-4xl">What We Offer</h2>
+          <p className="mt-3 max-w-2xl text-slate-500">From generics to consumer health, we supply a broad range of UK-quality pharmaceutical products to markets worldwide.</p>
+          <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
             {offerings.map((feature) => (
               <article
                 key={feature.title}
                 className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
               >
-                <h2 className="text-lg font-bold text-primary">{feature.title}</h2>
+                <h3 className="text-lg font-bold text-primary">{feature.title}</h3>
                 <p className="mt-2 text-sm text-slate-600">{feature.description}</p>
               </article>
             ))}
           </div>
         </section>
 
-        <section id="about" className="mx-auto w-full max-w-6xl scroll-mt-24 px-6 pb-20 md:px-10">
-          <div className="rounded-3xl border border-primary/10 bg-primary px-6 py-10 text-white md:px-10">
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4">
-              {stats.map((item) => (
-                <div key={item.label}>
-                  <p className="break-words text-2xl font-black leading-tight md:text-3xl">{item.value}</p>
-                  <p className="mt-1 text-sm text-white/80">{item.label}</p>
-                </div>
-              ))}
+        {/* Why Choose Us */}
+        <section className="mx-auto w-full max-w-6xl px-6 pb-20 md:px-10">
+          <p className="text-sm font-semibold uppercase tracking-wider text-primary">Why Choose Us</p>
+          <h2 className="mt-2 text-3xl font-black text-primary md:text-4xl">Built on Trust & Compliance</h2>
+          <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="rounded-2xl border border-secondary/30 bg-secondary/10 p-6">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary">
+                <svg className="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+              </div>
+              <h3 className="mt-4 font-bold text-primary">MHRA Approved</h3>
+              <p className="mt-2 text-sm text-slate-600">Fully approved by the UK's Medicines & Healthcare products Regulatory Agency.</p>
+            </div>
+            <div className="rounded-2xl border border-secondary/30 bg-secondary/10 p-6">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary">
+                <svg className="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              </div>
+              <h3 className="mt-4 font-bold text-primary">GDP Compliant</h3>
+              <p className="mt-2 text-sm text-slate-600">All distribution operations meet Good Distribution Practice standards.</p>
+            </div>
+            <div className="rounded-2xl border border-secondary/30 bg-secondary/10 p-6">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary">
+                <svg className="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <h3 className="mt-4 font-bold text-primary">Global Reach</h3>
+              <p className="mt-2 text-sm text-slate-600">Supplying healthcare providers, distributors, and organisations across international markets.</p>
+            </div>
+            <div className="rounded-2xl border border-secondary/30 bg-secondary/10 p-6">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary">
+                <svg className="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </div>
+              <h3 className="mt-4 font-bold text-primary">Ethical Practice</h3>
+              <p className="mt-2 text-sm text-slate-600">Every transaction is underpinned by transparency, integrity, and long-term partnership.</p>
             </div>
           </div>
         </section>
 
-        <section id="services" className="mx-auto w-full max-w-6xl scroll-mt-24 px-6 pb-20 md:px-10">
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+        {/* About */}
+        <section id="about" className="mx-auto w-full max-w-6xl scroll-mt-24 px-6 pb-20 md:px-10">
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-wider text-primary">
-                About madarpharma
-              </p>
+              <p className="text-sm font-semibold uppercase tracking-wider text-primary">About Madar Pharma</p>
               <h2 className="mt-3 text-3xl font-black text-primary md:text-4xl">
                 A trusted link between UK supply and global healthcare demand.
               </h2>
               <p className="mt-4 text-slate-600">
-                Madar Pharma is a UK-based pharmaceutical wholesaler dedicated
-                to supplying high-quality medicines from the United Kingdom to
-                international markets. Operating with a strong commitment to
-                regulatory compliance, quality assurance, and ethical practice,
-                we support healthcare providers, distributors, and organizations
-                worldwide.
+                Madar Pharma is a UK-based pharmaceutical wholesaler dedicated to supplying high-quality medicines from the United Kingdom to international markets. Operating with a strong commitment to regulatory compliance, quality assurance, and ethical practice, we support healthcare providers, distributors, and organisations worldwide.
               </p>
               <p className="mt-4 text-slate-600">
-                Specializing in wholesale and export, we source products from
-                reputable, fully licensed suppliers and ensure all medicines
-                meet strict UK and international standards. As a company
-                registered in the UK for wholesale pharmaceutical distribution,
-                we are committed to delivering safe, effective, and reliable
-                healthcare solutions across borders.
+                Specialising in wholesale and export, we source products from reputable, fully licensed suppliers and ensure all medicines meet strict UK and international standards. By leveraging robust supply chains and trusted logistics partners, we deliver medicines with consistency, security, and transparency in every transaction.
               </p>
-              <p className="mt-4 text-slate-600">
-                By leveraging robust supply chains and trusted logistics
-                partners, we deliver medicines with consistency, security, and
-                transparency in every transaction.
-              </p>
-            </div>
-            <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-              <h3 className="text-lg font-bold text-primary">
-                Our Core Principles
-              </h3>
-              <div className="mt-4 grid grid-cols-1 gap-3">
+              <div className="mt-5 flex flex-wrap gap-2">
                 {corePrinciples.map((item) => (
-                  <div
-                    key={item}
-                    className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-700"
-                  >
+                  <span key={item} className="rounded-full border border-primary/20 bg-secondary/20 px-4 py-1.5 text-xs font-semibold text-primary">
                     {item}
-                  </div>
+                  </span>
                 ))}
               </div>
+            </div>
+            <div className="overflow-hidden rounded-3xl shadow-md">
+              <img
+                src="/building.jpeg"
+                alt="Madar Pharma offices — Grosvenor House, Birmingham"
+                className="h-full w-full object-cover"
+              />
             </div>
           </div>
         </section>
 
-        <section id="process" className="mx-auto w-full max-w-6xl scroll-mt-24 px-6 pb-20 md:px-10">
-          <h2 className="text-3xl font-black text-primary md:text-4xl">
-            How it works
-          </h2>
-          <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-3">
+        {/* Services */}
+        <section id="services" className="mx-auto w-full max-w-6xl scroll-mt-24 px-6 pb-20 md:px-10">
+          <p className="text-sm font-semibold uppercase tracking-wider text-primary">What We Do</p>
+          <h2 className="mt-2 text-3xl font-black text-primary md:text-4xl">Our Services</h2>
+          <p className="mt-3 max-w-2xl text-slate-500">End-to-end pharmaceutical distribution services built for reliability, compliance, and scale.</p>
+          <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {services.map((service) => (
+              <div
+                key={service}
+                className="flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+              >
+                <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-secondary/30">
+                  <svg className="h-4 w-4 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <p className="text-sm font-semibold text-slate-700">{service}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* How It Works */}
+        <section className="mx-auto w-full max-w-6xl px-6 pb-20 md:px-10">
+          <p className="text-sm font-semibold uppercase tracking-wider text-primary">The Process</p>
+          <h2 className="mt-2 text-3xl font-black text-primary md:text-4xl">How It Works</h2>
+          <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">
             {processSteps.map((step) => (
               <article
                 key={step.title}
@@ -274,162 +335,81 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mx-auto w-full max-w-6xl px-6 pb-12 md:px-10">
-          <div className="rounded-3xl border border-primary/15 bg-white p-8 text-center shadow-sm md:p-10">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary/70">Scale Your Business</p>
-            <h2 className="mt-3 text-3xl font-black text-primary md:text-4xl">Connect With Us Today!</h2>
-            <p className="mx-auto mt-3 max-w-2xl text-slate-600">Expand your pharmaceutical portfolio with trusted sourcing and export-ready operations.</p>
+        {/* CTA */}
+        <section className="mx-auto w-full max-w-6xl px-6 pb-16 md:px-10">
+          <div className="rounded-3xl bg-primary p-10 text-center text-white md:p-14">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-secondary">Scale Your Business</p>
+            <h2 className="mt-3 text-3xl font-black md:text-4xl">Ready to Work With Us?</h2>
+            <p className="mx-auto mt-3 max-w-xl text-white/70">Expand your pharmaceutical portfolio with trusted UK sourcing and export-ready operations.</p>
+            <a href="#contact" className="mt-8 inline-flex items-center justify-center rounded-full bg-white px-8 py-3 text-sm font-bold text-primary transition hover:bg-secondary">
+              Get In Touch
+            </a>
           </div>
         </section>
 
-        <section className="mx-auto w-full max-w-6xl px-6 pb-20 md:px-10">
-          <h2 className="text-3xl font-black text-primary md:text-4xl">
-            Our Services
-          </h2>
-          <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2">
-            {services.map((service) => (
-              <article
-                key={service}
-                className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"
-              >
-                <h3 className="text-base font-bold text-primary">{service}</h3>
-                <p className="mt-2 text-sm text-slate-600">
-                  Structured execution with quality, documentation, and timeline
-                  accountability.
-                </p>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        <section className="mx-auto w-full max-w-6xl px-6 pb-12 md:px-10">
-          <div className="rounded-3xl border border-secondary/40 bg-secondary/20 p-8 md:p-10">
-            <h2 className="text-3xl font-black text-primary md:text-4xl">Ready To Become Partner?</h2>
-            <p className="mt-3 max-w-2xl text-slate-700">Register now for online access to UK healthcare products.</p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <button className="inline-flex w-[190px] items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-bold text-white transition hover:bg-primary/90">Become a Partner</button>
-              <button className="inline-flex w-[190px] items-center justify-center rounded-full border border-primary/30 bg-white px-6 py-3 text-sm font-bold text-primary transition hover:bg-slate-50">Request a Callback</button>
-            </div>
-          </div>
-        </section>
 
         <section id="contact" className="mx-auto w-full max-w-6xl scroll-mt-24 px-6 pb-20 md:px-10">
-          <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm md:p-10">
-            <h2 className="text-3xl font-black text-primary md:text-4xl">Contact Us Form</h2>
-            <p className="mt-2 text-lg font-semibold text-slate-700">Contact Form</p>
-            <p className="mt-3 max-w-2xl text-slate-700">
-              Share your importer profile and business requirements. Our team will respond with tailored support.
-            </p>
+          <div className="grid grid-cols-1 gap-0 overflow-hidden rounded-3xl border border-slate-200 shadow-sm lg:grid-cols-5">
 
-            <form className="mt-6 space-y-7">
-              <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                <input className="rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm outline-none ring-primary/20 focus:ring-4" placeholder="First Name" />
-                <input className="rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm outline-none ring-primary/20 focus:ring-4" placeholder="Last Name" />
-                <input className="rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm outline-none ring-primary/20 focus:ring-4" placeholder="Email" />
-                <input className="rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm outline-none ring-primary/20 focus:ring-4" placeholder="Contact Number" />
-                <input className="rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm outline-none ring-primary/20 focus:ring-4 md:col-span-2" placeholder="The company name*" />
-                <input className="rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm outline-none ring-primary/20 focus:ring-4 md:col-span-2" placeholder="Country" />
-              </div>
-
-              <fieldset>
-                <legend className="text-sm font-bold text-primary">Are you a first-time importer?</legend>
-                <div className="mt-3 flex flex-wrap gap-6 text-sm text-slate-700">
-                  <label className="inline-flex items-center gap-2"><input type="radio" name="firstTimeImporter" /> Yes, I am</label>
-                  <label className="inline-flex items-center gap-2"><input type="radio" name="firstTimeImporter" /> No, I am not</label>
-                </div>
-              </fieldset>
-
-              <fieldset>
-                <legend className="text-sm font-bold text-primary">How often do you place orders?</legend>
-                <div className="mt-3 grid grid-cols-1 gap-2 text-sm text-slate-700 sm:grid-cols-2 lg:grid-cols-4">
-                  <label className="inline-flex items-center gap-2"><input type="radio" name="orderFrequency" /> Monthly</label>
-                  <label className="inline-flex items-center gap-2"><input type="radio" name="orderFrequency" /> Quarterly</label>
-                  <label className="inline-flex items-center gap-2"><input type="radio" name="orderFrequency" /> 6 Months</label>
-                  <label className="inline-flex items-center gap-2"><input type="radio" name="orderFrequency" /> 12 Months</label>
-                </div>
-              </fieldset>
-
-              <fieldset>
-                <legend className="text-sm font-bold text-primary">Order Value Size</legend>
-                <div className="mt-3 grid grid-cols-1 gap-2 text-sm text-slate-700 sm:grid-cols-2 lg:grid-cols-3">
-                  <label className="inline-flex items-center gap-2"><input type="radio" name="orderValue" /> 5K - 10K GBP</label>
-                  <label className="inline-flex items-center gap-2"><input type="radio" name="orderValue" /> 10K - 15K GBP</label>
-                  <label className="inline-flex items-center gap-2"><input type="radio" name="orderValue" /> 15K - 20K GBP</label>
-                  <label className="inline-flex items-center gap-2"><input type="radio" name="orderValue" /> 20K - 50K GBP</label>
-                  <label className="inline-flex items-center gap-2"><input type="radio" name="orderValue" /> Above 50K GBP</label>
-                </div>
-              </fieldset>
-
-              <fieldset>
-                <legend className="text-sm font-bold text-primary">Categories</legend>
-                <div className="mt-3 grid grid-cols-1 gap-2 text-sm text-slate-700 sm:grid-cols-2 lg:grid-cols-3">
-                  <label className="inline-flex items-center gap-2"><input type="checkbox" /> Generic</label>
-                  <label className="inline-flex items-center gap-2"><input type="checkbox" /> OTC</label>
-                  <label className="inline-flex items-center gap-2"><input type="checkbox" /> Vitamins & Supplements</label>
-                  <label className="inline-flex items-center gap-2"><input type="checkbox" /> Personal Care</label>
-                  <label className="inline-flex items-center gap-2"><input type="checkbox" /> Skincare</label>
-                </div>
-              </fieldset>
-
-              <fieldset>
-                <legend className="text-sm font-bold text-primary">Type of License</legend>
-                <div className="mt-3 grid grid-cols-1 gap-2 text-sm text-slate-700 sm:grid-cols-2 lg:grid-cols-4">
-                  <label className="inline-flex items-center gap-2"><input type="radio" name="licenseType" /> Importer</label>
-                  <label className="inline-flex items-center gap-2"><input type="radio" name="licenseType" /> Pharmacy</label>
-                  <label className="inline-flex items-center gap-2"><input type="radio" name="licenseType" /> Retail Pharmacy</label>
-                  <label className="inline-flex items-center gap-2"><input type="radio" name="licenseType" /> Wholesaler</label>
-                </div>
-              </fieldset>
-
-              <fieldset>
-                <legend className="text-sm font-bold text-primary">Would you like to book a meeting?</legend>
-                <div className="mt-3">
-                  <label className="inline-flex items-center gap-2 text-sm text-slate-700"><input type="checkbox" /> Book a Meeting</label>
-                </div>
-              </fieldset>
-
+            {/* Left — contact info */}
+            <div className="flex flex-col justify-between bg-primary p-8 text-white lg:col-span-2 md:p-10">
               <div>
-                <label className="mb-2 block text-sm font-bold text-primary">Tell us more about your business</label>
-                <textarea className="min-h-32 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm outline-none ring-primary/20 focus:ring-4" />
+                <h2 className="text-3xl font-black md:text-4xl">Get In Touch</h2>
+                <p className="mt-3 text-sm leading-6 text-white/70">
+                  Reach out to our team for wholesale enquiries, export opportunities, or general information.
+                </p>
               </div>
 
-              <label className="flex w-full items-start gap-3 rounded-xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-700">
-                <input type="checkbox" className="mt-1" />
-                <span>
-                  I agree to the Privacy Policy, and acknowledge the use of my data in accordance with applicable laws.
-                </span>
-              </label>
-
-              <button className="mt-5 block rounded-full bg-primary px-6 py-3 text-sm font-bold text-white transition hover:bg-primary/90">
-                Submit Inquiry
-              </button>
-            </form>
-          </div>
-        </section>
-
-        <section className="mx-auto w-full max-w-6xl px-6 pb-20 md:px-10">
-          <div className="rounded-3xl border border-secondary/40 bg-secondary/20 p-8 md:p-10">
-            <h2 className="text-3xl font-black text-primary md:text-4xl">
-              Global Support Network
-            </h2>
-            <p className="mt-3 max-w-2xl text-slate-700">
-              Contact our team for wholesale inquiries, export opportunities,
-              and international distribution partnerships.
-            </p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <button className="inline-flex w-[190px] items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-bold text-white transition hover:bg-primary/90">
-                Request a Callback
-              </button>
-              <button className="inline-flex w-[190px] items-center justify-center rounded-full border border-primary/30 bg-white px-6 py-3 text-sm font-bold text-primary transition hover:bg-slate-50">
-                Become a Partner
-              </button>
+              <div className="mt-10 space-y-7">
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-widest text-secondary">Address</p>
+                  <p className="mt-2 text-sm leading-6 text-white/80">
+                    Grosvenor House<br />
+                    11 St Paul's<br />
+                    Birmingham, B3 1RB<br />
+                    United Kingdom
+                  </p>
+                </div>
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-widest text-secondary">Email</p>
+                  <p className="mt-2 text-sm text-white/80">info@madarpharm.com</p>
+                </div>
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-widest text-secondary">Phone Number</p>
+                  <p className="mt-2 text-sm text-white/80">+44 7999 646947</p>
+                </div>
+              </div>
             </div>
+
+            {/* Right — form */}
+            <div className="bg-white p-8 lg:col-span-3 md:p-10">
+              <form className="space-y-4">
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  <input className="rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm outline-none ring-primary/20 focus:ring-4" placeholder="Name *" />
+                  <input className="rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm outline-none ring-primary/20 focus:ring-4" placeholder="Company Name" />
+                </div>
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  <input className="rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm outline-none ring-primary/20 focus:ring-4" placeholder="Email Address *" />
+                  <input className="rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm outline-none ring-primary/20 focus:ring-4" placeholder="Phone Number" />
+                </div>
+                <textarea className="min-h-36 w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm outline-none ring-primary/20 focus:ring-4" placeholder="Enquiry *" />
+                <label className="flex items-start gap-3 text-sm text-slate-600">
+                  <input type="checkbox" className="mt-0.5 accent-primary" />
+                  <span>I agree to the Privacy Policy and consent to my data being used to respond to my enquiry.</span>
+                </label>
+                <button className="w-full rounded-full bg-primary px-6 py-3 text-sm font-bold text-white transition hover:bg-primary/90">
+                  Send Message
+                </button>
+              </form>
+            </div>
+
           </div>
         </section>
+
       </main>
 
       <footer className="border-t border-slate-200 bg-slate-950 text-slate-200">
-        <div className="mx-auto grid w-full max-w-6xl grid-cols-1 gap-10 px-6 py-14 md:px-10 lg:grid-cols-4">
+        <div className="mx-auto grid w-full max-w-6xl grid-cols-1 gap-10 px-6 py-14 md:px-10 lg:grid-cols-5">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3">
               <img
@@ -444,9 +424,10 @@ export default function Home() {
               />
             </div>
             <p className="mt-4 max-w-md text-sm leading-6 text-slate-400">
-              UK-based pharmaceutical wholesaler delivering high-quality
-              medicines to international markets with regulatory compliance,
-              transparency, and dependable export operations.
+              Madar Pharma is a UK-based pharmaceutical wholesaler supplying
+              high-quality medicines from the United Kingdom to international
+              and domestic markets through compliant, secure, and reliable
+              distribution.
             </p>
           </div>
 
@@ -456,11 +437,23 @@ export default function Home() {
             </h3>
             <ul className="mt-4 space-y-2 text-sm text-slate-400">
               <li><a href="#home" className="transition hover:text-secondary">Home</a></li>
-              <li><a href="#offerings" className="transition hover:text-secondary">Offerings</a></li>
               <li><a href="#about" className="transition hover:text-secondary">About</a></li>
               <li><a href="#services" className="transition hover:text-secondary">Services</a></li>
-              <li><a href="#contact" className="transition hover:text-secondary">Contact</a></li>
+              <li><a href="#contact" className="transition hover:text-secondary">Contact Us</a></li>
             </ul>
+          </div>
+
+          <div>
+            <h3 className="text-sm font-bold uppercase tracking-wider text-white">
+              Address
+            </h3>
+            <address className="mt-4 space-y-1 text-sm not-italic text-slate-400">
+              <p>Grosvenor House</p>
+              <p>11 St Paul's</p>
+              <p>Birmingham</p>
+              <p>B3 1RB</p>
+              <p>United Kingdom</p>
+            </address>
           </div>
 
           <div>
@@ -468,10 +461,8 @@ export default function Home() {
               Contact
             </h3>
             <ul className="mt-4 space-y-2 text-sm text-slate-400">
-              <li>Email: info@madarpharma.com</li>
-              <li>Phone: +000 0000 000</li>
-              <li>Mon - Fri: 8:00 AM - 5:00 PM</li>
-              <li>Global wholesale support</li>
+              <li>Email: info@madarpharm.com</li>
+              <li>Phone: +44 7999 646947</li>
             </ul>
           </div>
         </div>
