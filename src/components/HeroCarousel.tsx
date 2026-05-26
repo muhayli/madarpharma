@@ -54,6 +54,21 @@ const slides = [
     description: "Every product we supply is verified against MHRA standards before dispatch.",
     image: "/carousal/p4.jpeg",
   },
+  {
+    title: "Regulatory Documentation",
+    description: "Full documentation and audit trails maintained across every supply chain transaction.",
+    image: "/carousal/c1.jpeg",
+  },
+  {
+    title: "Compliance & Governance",
+    description: "Every order is reviewed and approved against strict UK regulatory requirements.",
+    image: "/carousal/c2.jpeg",
+  },
+  {
+    title: "Record Keeping",
+    description: "Meticulous record keeping ensuring full traceability and regulatory accountability.",
+    image: "/carousal/c3.jpeg",
+  },
 ];
 
 export default function HeroCarousel() {
