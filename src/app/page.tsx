@@ -101,13 +101,10 @@ export default function Home() {
               <a className="rounded-full px-3 py-1.5 transition hover:bg-slate-100 hover:text-primary" href="#services">
                 Services
               </a>
-              <a className="rounded-full px-3 py-1.5 transition hover:bg-slate-100 hover:text-primary" href="#contact">
-                Contact Us
-              </a>
             </nav>
-            <button className="rounded-full bg-primary px-5 py-2 text-sm font-semibold text-white transition hover:bg-primary/90">
+            <a href="#contact" className="rounded-full bg-primary px-5 py-2 text-sm font-semibold text-white transition hover:bg-primary/90">
               Contact Us
-            </button>
+            </a>
           </div>
 
           <details className="group w-full md:hidden">
@@ -125,13 +122,10 @@ export default function Home() {
                 <a className="rounded-xl px-3 py-2 transition hover:bg-slate-100 hover:text-primary" href="#services">
                   Services
                 </a>
-                <a className="rounded-xl px-3 py-2 transition hover:bg-slate-100 hover:text-primary" href="#contact">
-                  Contact Us
-                </a>
               </nav>
-              <button className="mt-3 w-full rounded-full bg-primary px-5 py-2 text-sm font-semibold text-white transition hover:bg-primary/90">
+              <a href="#contact" className="mt-3 block w-full rounded-full bg-primary px-5 py-2 text-center text-sm font-semibold text-white transition hover:bg-primary/90">
                 Contact Us
-              </button>
+              </a>
             </div>
           </details>
         </div>
@@ -213,7 +207,7 @@ export default function Home() {
         </section>
 
         {/* What We Offer */}
-        <section className="mx-auto w-full max-w-6xl scroll-mt-24 px-6 pb-20 md:px-10">
+        <section id="services" className="mx-auto w-full max-w-6xl scroll-mt-24 px-6 pb-20 md:px-10">
           <p className="text-sm font-semibold uppercase tracking-wider text-primary">Our Products</p>
           <h2 className="mt-2 text-3xl font-black text-primary md:text-4xl">What We Offer</h2>
           <p className="mt-3 max-w-2xl text-slate-500">From generics to consumer health, we supply a broad range of UK-quality pharmaceutical products to markets worldwide.</p>
@@ -280,13 +274,6 @@ export default function Home() {
               <p className="mt-4 text-slate-600">
                 Specialising in wholesale and export, we source products from reputable, fully licensed suppliers and ensure all medicines meet strict UK and international standards. By leveraging robust supply chains and trusted logistics partners, we deliver medicines with consistency, security, and transparency in every transaction.
               </p>
-              <div className="mt-5 flex flex-wrap gap-2">
-                {corePrinciples.map((item) => (
-                  <span key={item} className="rounded-full border border-primary/20 bg-secondary/20 px-4 py-1.5 text-xs font-semibold text-primary">
-                    {item}
-                  </span>
-                ))}
-              </div>
             </div>
             <div className="overflow-hidden rounded-3xl shadow-md">
               <img
@@ -298,25 +285,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Services */}
-        <section id="services" className="mx-auto w-full max-w-6xl scroll-mt-24 px-6 pb-20 md:px-10">
-          <p className="text-sm font-semibold uppercase tracking-wider text-primary">What We Do</p>
-          <h2 className="mt-2 text-3xl font-black text-primary md:text-4xl">Our Services</h2>
-          <p className="mt-3 max-w-2xl text-slate-500">End-to-end pharmaceutical distribution services built for reliability, compliance, and scale.</p>
-          <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {services.map((service) => (
-              <div
-                key={service}
-                className="flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
-              >
-                <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-secondary/30">
-                  <svg className="h-4 w-4 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                </div>
-                <p className="text-sm font-semibold text-slate-700">{service}</p>
-              </div>
-            ))}
-          </div>
-        </section>
 
         {/* How It Works */}
         <section className="mx-auto w-full max-w-6xl px-6 pb-20 md:px-10">

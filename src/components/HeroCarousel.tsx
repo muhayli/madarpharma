@@ -14,6 +14,46 @@ const slides = [
     description: "Reliable routes delivering UK pharmaceuticals to international markets.",
     image: "/carousal/export-distribution.jpeg",
   },
+  {
+    title: "UK Procurement",
+    description: "Sourcing high-quality medicines from fully licensed UK suppliers.",
+    image: "https://images.unsplash.com/photo-1581056771085-3ce30d907416?fm=jpg&q=60&w=1600&auto=format&fit=crop&ixlib=rb-4.1.0",
+  },
+  {
+    title: "GDP Compliance",
+    description: "Every step of our supply chain meets Good Distribution Practice standards.",
+    image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?fm=jpg&q=60&w=1600&auto=format&fit=crop&ixlib=rb-4.1.0",
+  },
+  {
+    title: "Export & Distribution",
+    description: "Reliable routes delivering UK pharmaceuticals to international markets.",
+    image: "https://images.unsplash.com/photo-1494412519320-aa613dfb7738?fm=jpg&q=60&w=1600&auto=format&fit=crop&ixlib=rb-4.1.0",
+  },
+  {
+    title: "Global Export Network",
+    description: "Shipping UK pharmaceuticals to international markets through certified logistics partners.",
+    image: "/carousal/ex.jpeg",
+  },
+  {
+    title: "Licensed Medicines",
+    description: "A comprehensive range of branded and generic medicines sourced from UK-licensed suppliers.",
+    image: "/carousal/p1.jpeg",
+  },
+  {
+    title: "Generic Pharmaceuticals",
+    description: "High-quality generic medicines meeting strict UK and international regulatory standards.",
+    image: "/carousal/p2.jpeg",
+  },
+  {
+    title: "Wholesale Supply",
+    description: "Bulk pharmaceutical supply across a broad product portfolio for distributors worldwide.",
+    image: "/carousal/p3.jpeg",
+  },
+  {
+    title: "Quality Assured Products",
+    description: "Every product we supply is verified against MHRA standards before dispatch.",
+    image: "/carousal/p4.jpeg",
+  },
 ];
 
 export default function HeroCarousel() {
@@ -27,20 +67,28 @@ export default function HeroCarousel() {
     return () => clearInterval(timer);
   }, []);
 
-  const safeIndex = index % slides.length;
   const next = () => setIndex((prev) => (prev + 1) % slides.length);
   const prev = () => setIndex((prev) => (prev - 1 + slides.length) % slides.length);
 
   return (
     <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl">
       <div className="relative h-[420px] w-full md:h-[520px]">
-        <Image
-          src={slides[safeIndex].image}
-          alt={slides[safeIndex].title}
-          fill
-          className="object-cover"
-          priority
-        />
+        {slides.map((slide, i) => (
+          <div
+            key={slide.image}
+            className="absolute inset-0 transition-opacity duration-700"
+            style={{ opacity: i === index ? 1 : 0 }}
+          >
+            <Image
+              src={slide.image}
+              alt={slide.title}
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover"
+              priority={i === 0}
+            />
+          </div>
+        ))}
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/10" />
       </div>
 
@@ -56,9 +104,9 @@ export default function HeroCarousel() {
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 p-5 pb-20 md:p-6 md:pb-24">
-        <p className="text-xl font-black text-white md:text-2xl">{slides[safeIndex].title}</p>
+        <p className="text-xl font-black text-white md:text-2xl">{slides[index].title}</p>
         <p className="mt-1 max-w-xl text-sm text-white/90 md:text-base">
-          {slides[safeIndex].description}
+          {slides[index].description}
         </p>
       </div>
 
@@ -87,7 +135,7 @@ export default function HeroCarousel() {
               type="button"
               onClick={() => setIndex(dotIndex)}
               className={`h-2.5 w-2.5 rounded-full transition ${
-                safeIndex === dotIndex ? "bg-primary" : "bg-slate-300"
+                index === dotIndex ? "bg-primary" : "bg-slate-300"
               }`}
               aria-label={`Go to slide ${dotIndex + 1}`}
             />
