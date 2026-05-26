@@ -95,11 +95,11 @@ export default function Home() {
               <a className="rounded-full px-3 py-1.5 transition hover:bg-slate-100 hover:text-primary" href="#home">
                 Home
               </a>
-              <a className="rounded-full px-3 py-1.5 transition hover:bg-slate-100 hover:text-primary" href="#about">
-                About
-              </a>
               <a className="rounded-full px-3 py-1.5 transition hover:bg-slate-100 hover:text-primary" href="#services">
                 Services
+              </a>
+              <a className="rounded-full px-3 py-1.5 transition hover:bg-slate-100 hover:text-primary" href="#about">
+                About
               </a>
             </nav>
             <a href="#contact" className="rounded-full bg-primary px-5 py-2 text-sm font-semibold text-white transition hover:bg-primary/90">
@@ -116,11 +116,11 @@ export default function Home() {
                 <a className="rounded-xl px-3 py-2 transition hover:bg-slate-100 hover:text-primary" href="#home">
                   Home
                 </a>
-                <a className="rounded-xl px-3 py-2 transition hover:bg-slate-100 hover:text-primary" href="#about">
-                  About
-                </a>
                 <a className="rounded-xl px-3 py-2 transition hover:bg-slate-100 hover:text-primary" href="#services">
                   Services
+                </a>
+                <a className="rounded-xl px-3 py-2 transition hover:bg-slate-100 hover:text-primary" href="#about">
+                  About
                 </a>
               </nav>
               <a href="#contact" className="mt-3 block w-full rounded-full bg-primary px-5 py-2 text-center text-sm font-semibold text-white transition hover:bg-primary/90">

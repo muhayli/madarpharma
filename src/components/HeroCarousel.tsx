@@ -7,27 +7,7 @@ const slides = [
   {
     title: "UK Procurement",
     description: "Sourcing high-quality medicines from fully licensed UK suppliers.",
-    image: "/carousal/uk-procurement.jpeg",
-  },
-  {
-    title: "Export Distribution",
-    description: "Reliable routes delivering UK pharmaceuticals to international markets.",
-    image: "/carousal/export-distribution.jpeg",
-  },
-  {
-    title: "UK Procurement",
-    description: "Sourcing high-quality medicines from fully licensed UK suppliers.",
-    image: "https://images.unsplash.com/photo-1581056771085-3ce30d907416?fm=jpg&q=60&w=1600&auto=format&fit=crop&ixlib=rb-4.1.0",
-  },
-  {
-    title: "GDP Compliance",
-    description: "Every step of our supply chain meets Good Distribution Practice standards.",
-    image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?fm=jpg&q=60&w=1600&auto=format&fit=crop&ixlib=rb-4.1.0",
-  },
-  {
-    title: "Export & Distribution",
-    description: "Reliable routes delivering UK pharmaceuticals to international markets.",
-    image: "https://images.unsplash.com/photo-1494412519320-aa613dfb7738?fm=jpg&q=60&w=1600&auto=format&fit=crop&ixlib=rb-4.1.0",
+    image: "/carousal/uk-p.jpeg",
   },
   {
     title: "Global Export Network",
@@ -35,39 +15,9 @@ const slides = [
     image: "/carousal/ex.jpeg",
   },
   {
-    title: "Licensed Medicines",
-    description: "A comprehensive range of branded and generic medicines sourced from UK-licensed suppliers.",
-    image: "/carousal/p1.jpeg",
-  },
-  {
-    title: "Generic Pharmaceuticals",
-    description: "High-quality generic medicines meeting strict UK and international regulatory standards.",
-    image: "/carousal/p2.jpeg",
-  },
-  {
-    title: "Wholesale Supply",
-    description: "Bulk pharmaceutical supply across a broad product portfolio for distributors worldwide.",
-    image: "/carousal/p3.jpeg",
-  },
-  {
-    title: "Quality Assured Products",
-    description: "Every product we supply is verified against MHRA standards before dispatch.",
-    image: "/carousal/p4.jpeg",
-  },
-  {
-    title: "Regulatory Documentation",
-    description: "Full documentation and audit trails maintained across every supply chain transaction.",
-    image: "/carousal/c1.jpeg",
-  },
-  {
-    title: "Compliance & Governance",
-    description: "Every order is reviewed and approved against strict UK regulatory requirements.",
+    title: "Quality Assurance & Compliance",
+    description: "GDP-certified verification, documentation and regulatory checks at every stage.",
     image: "/carousal/c2.jpeg",
-  },
-  {
-    title: "Record Keeping",
-    description: "Meticulous record keeping ensuring full traceability and regulatory accountability.",
-    image: "/carousal/c3.jpeg",
   },
 ];
 
